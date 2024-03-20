@@ -22,7 +22,6 @@ public class Index extends HttpServlet
     {
         tasks = dao.getTasks();
 
-        System.out.println(tasks.size());
         req.setAttribute("tasks", tasks);
         RequestDispatcher rd = req.getRequestDispatcher("index.jsp");
         rd.forward(req, res);

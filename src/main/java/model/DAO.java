@@ -10,9 +10,9 @@ import java.util.ArrayList;
 public class DAO
 {
     private final String DRIVER   = "com.mysql.cj.jdbc.Driver";
-    private final String URL      = "butterfly";
-    private final String USER     = "butterfly";
-    private final String PASSWORD = "butterfly";
+    private final String URL      = "jdbc:mysql://" + System.getenv("DB_URL");
+    private final String USER     = System.getenv("DB_USER");
+    private final String PASSWORD = System.getenv("DB_PASSWORD");
 
     private Connection connect() throws Exception
     {
