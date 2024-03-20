@@ -1,0 +1,164 @@
+@charset "ISO-8859-1";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap");
+
+:root {
+	font-family: "Noto Sans";
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+input, button, textarea, a {
+	color: inherit;
+	font-family: inherit;
+}
+
+a, button, input[type="submit"], input[type="checkbox"] { cursor: pointer; }
+
+body {
+	font-size: 1.4rem;
+	background-color: #020617;
+	color: #f1f5f9;
+	display: flex;
+	justify-content: center;
+
+}
+
+.title {
+	margin-block: 1.2rem;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th {
+	color: #94a3b8;
+	background-color: #0f172a;
+}
+
+td, th {
+	border: 1px solid #475569;
+	padding: 1.2rem;
+}
+
+td:nth-child(1), th:nth-child(1),
+td:nth-child(3), th:nth-child(3) {
+	text-align: center;
+}
+
+td:nth-child(4), th:nth-child(4) {
+	padding: .4rem;
+}
+
+td:nth-child(2), th:nth-child(2) {
+	width: 60%;
+}
+
+.container {
+	min-width: 37.5rem;
+	max-width: 72rem;
+	width: 100%;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 4.2rem;
+	background: transparent;
+	margin: .8rem;
+	border: 1px solid #475569;
+	transition-property: background, color, box-shadow;
+	transition-duration: 200ms;
+	cursor: pointer;
+	text-decoration: none;
+	color: #94a3b8;
+	box-shadow: 0 0 1rem -1.5rem #00000000;
+}
+
+input {
+	background: transparent;
+	border: 1px solid #475569;
+	padding: .2rem;
+}
+
+input:focus-within {
+	border-color: #f1f5f9;
+	outline: 1px solid #f1f5f966;
+}
+
+.btn:hover {
+	background: #475569;
+	color: #f1f5f9;
+	box-shadow: 0 2rem 3rem -1.5rem #111111ff;
+}
+
+form {
+	width: 100%;
+	border: 1px solid #0f172a;
+	padding: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	gap: .8rem;
+}
+
+form label {
+	color: #94a3b8;
+}
+
+form .input-block {
+	display: flex;
+	flex-direction: column;
+}
+
+form .input-block:nth-child(2) {
+	flex-direction: row;
+	align-items: center;
+	gap: .8rem;
+}
+
+form .btn {
+	margin: 0;
+	width: 100%;
+}
+
+.options .btn {
+	height: 3.6rem;
+	padding: .8rem;
+}
+
+.options .btn.delete {
+	border-color: #7f1d1d;
+	color: #b91c1c;
+}
+
+.options .btn.delete:hover {
+	color: #fee2e2;
+	border-color: #dc2626;
+	background-color: #dc2626;
+}
+
+.options .btn.Check {
+	border-color: #14532d;
+	color: #16a34a;
+}
+
+.options .btn.Check:hover {
+	border-color: #16a34a;
+	color: #bbf7d0;
+	background: #16a34a;
+}
+
+.options .btn.Uncheck:hover {
+	border-color: #ca8a04;
+	color: #fef9c3;
+	background: #ca8a04;
+}
